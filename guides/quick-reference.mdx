@@ -1,0 +1,39 @@
+---
+title: "Quick Reference"
+description: "A handy checklist for creating and maintaining docs pages."
+icon: "bolt"
+---
+
+## Common authoring checklist
+
+Use this page as a quick reference while you add new content.
+
+### Structure
+
+<Steps>
+  <Step title="Add a page">
+    Create a new `.mdx` file in the appropriate folder and include frontmatter with a title and description.
+  </Step>
+  <Step title="Add navigation">
+    Update `docs.json` so the page appears in the correct navigation group.
+  </Step>
+  <Step title="Preview locally">
+    Run `mint dev` and confirm the page renders with the expected layout.
+  </Step>
+</Steps>
+
+### Recommended content patterns
+
+- Use short paragraphs and clear section headings.
+- Include a `Card` or `CardGroup` when you want to guide users to the next step.
+- Add code blocks for commands, configuration, or examples.
+
+### Example
+
+```bash
+npx mint dev
+```
+
+<Note>
+  If a page is missing from the sidebar, check the `pages` list in `docs.json`.
+</Note>
